@@ -7,7 +7,8 @@ __pycache__
 *.pyc
 src/coverage/*
 bin/*
-data/geojson/*
 data/backup/*
+data/geojson/*
+data/pbf/*
 src/graph/graph_loader.h
 !.gitkeep
