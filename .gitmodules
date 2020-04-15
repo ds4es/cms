@@ -1,0 +1,9 @@
+[submodule "lib/RoutingKit"]
+	path = lib/RoutingKit
+	url = https://github.com/RoutingKit/RoutingKit
+[submodule "lib/rapidjson"]
+	path = lib/rapidjson
+	url = https://github.com/Tencent/rapidjson
+[submodule "lib/OSM-binary"]
+	path = lib/OSM-binary
+	url = https://github.com/scrosby/OSM-binary
