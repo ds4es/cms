@@ -4,20 +4,19 @@
  *
  * COMPILE AND EXECUTE
  *
- * Compile:
+ * # Compile:
  * g++ -Ilib/RoutingKit/include -Llib/RoutingKit/lib -std=c++11 ./test/pbf_to_contracted_graph.cpp -o ./bin/pbf_to_contracted_graph -lroutingkit -lprotobuf-lite -losmpbf -lz -lboost_serialization
  * 
- * Declare shared libraries to consider:
- * export LD_LIBRARY_PATH=./lib/RoutingKit/lib:~/.local/boost-libs/lib:/usr/local/lib64:/usr/local/lib
+ * # Add needed shared libraries to the environment variable LD_LIBRARY_PATH:
+ * export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./lib/RoutingKit/lib:/usr/local/lib64:/usr/local/lib
  * 
- * Launch the generated executable
+ * # Launch the generated executable
  * ./bin/pbf_to_contracted_graph ./data/pbf/andorra-latest.osm.pbf
  */
 
 #include <sys/stat.h>
 
 #include "../src/graph/graph.h"
-#include "../src/graph/graph_loader.h"
 
 int findLastIndex(std::string& str, char x) 
 { 

@@ -4,16 +4,19 @@
  * the given threshold, the number of units available randomly dispatched and export 
  * this information in a GeoJSON file
  * 
+ * PREREQUISITE
+ * To have at least one precomputed graph in a subdirectory of the ./data/backup directory.
+ * One can generate it with the ./test/pbf_to_contracted_graph.cpp script. 
  *
  * COMPILE AND EXECUTE
  *
- * Compile:
+ * # Compile:
  * g++ -Ilib/RoutingKit/include -Llib/RoutingKit/lib -std=c++11 ./test/benchmark_capacity_response.cpp -o ./bin/benchmark_capacity_response -lroutingkit -lprotobuf-lite -losmpbf -lz -lboost_serialization -lstdc++fs
  * 
- * Declare shared libraries to consider:
- * export LD_LIBRARY_PATH=./lib/RoutingKit/lib:~/.local/boost-libs/lib:/usr/local/lib64:/usr/local/lib
+ * # Add needed shared libraries to the environment variable LD_LIBRARY_PATH:
+ * export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./lib/RoutingKit/lib:/usr/local/lib64:/usr/local/lib
  * 
- * Launch the generated executable
+ * # Launch the generated executable
  * ./bin/benchmark_capacity_response
  */
 

@@ -4,13 +4,13 @@
  *
  * COMPILE AND EXECUTE
  *
- * Compile:
+ * # Compile:
  * g++ -Ilib/RoutingKit/include -Llib/RoutingKit/lib -std=c++11 ./test/graph_properties_preview.cpp -o ./bin/graph_properties_preview -lroutingkit -lprotobuf-lite -losmpbf -lz -lboost_serialization
  * 
- * Declare shared libraries to consider:
- * export LD_LIBRARY_PATH=./lib/RoutingKit/lib:~/.local/boost-libs/lib:/usr/local/lib64:/usr/local/lib
+ * # Add needed shared libraries to the environment variable LD_LIBRARY_PATH:
+ * export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./lib/RoutingKit/lib:/usr/local/lib64:/usr/local/lib
  * 
- * Launch the generated executable
+ * # Launch the generated executable
  * ./bin/graph_properties_preview ./data/pbf/andorra-latest.osm.pbf
  */
 #include "../src/graph/graph.h"
