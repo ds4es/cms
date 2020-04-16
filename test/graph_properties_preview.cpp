@@ -14,7 +14,6 @@
  * ./bin/graph_properties_preview ./data/pbf/andorra-latest.osm.pbf
  */
 #include "../src/graph/graph.h"
-#include "../src/graph/graph_loader.h"
 
 void graph_properties_preview(cms::Graph &graph) {
 

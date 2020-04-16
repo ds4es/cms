@@ -17,8 +17,8 @@
 #include <routingkit/id_mapper.h>
 #include <routingkit/bit_vector.h>
 
-#include "rapidjson/writer.h"
-#include "rapidjson/stringbuffer.h"
+#include "../../lib/rapidjson/include/rapidjson/writer.h"
+#include "../../lib/rapidjson/include/rapidjson/stringbuffer.h"
 
 #include <sstream>
 #include <bits/stdc++.h> // std::unordered_multimap

@@ -7,3 +7,6 @@
 [submodule "lib/OSM-binary"]
 	path = lib/OSM-binary
 	url = https://github.com/scrosby/OSM-binary
+[submodule "lib/protobuf"]
+	path = lib/protobuf
+	url = https://github.com/protocolbuffers/protobuf
