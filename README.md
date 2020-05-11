@@ -1,6 +1,6 @@
-# Coverage Monitoring Service
+# Coverage Monitoring Service (Back-End)
 
-This project aims to propose a solution to offer a high resolution capacity coverage monitoring for critical dispatch services such as an emergency service.   
+This project aims to propose a solution to offer a high resolution of the capacity coverage monitoring for critical dispatch services such as an emergency service.   
 
 By **capacity coverage** we mean the information relying on: *How many teams can reach any point of a jurisdiction within a given timeframe?*
 
@@ -8,7 +8,7 @@ Below is an example of how this information could be used in a dispatch applicat
 
 ![Dispatch application example](https://benjaminberhault.com//images/01-Project-Getting_a_clear_picture_on_the_front_line/option01.jpg)
 
-At some point this project will need one or more machine learning models to estimate accurately the routes.
+At some point this project will need one or more machine learning models to estimate accurately the routes. For that purpose a project has been initiated: https://github.com/ds4es/esuro
 
 ## Installation instructions on RHEL 8 / CentOS 8
 
@@ -27,7 +27,7 @@ Pull all git submodules
 git submodule update --init --recursive
 ```
 
-Build and install submodules that needs to b
+Build and install submodules that needs to be
 ```
 # protobuf
 cd ./lib/protobuf && ./autogen.sh
@@ -55,7 +55,6 @@ Each script in the test directory got on the top of it build and execute instruc
 _NB: A minimum of 4GB RAM will be required to run those scripts_
 
 ```
-cd cms
 # Get some data
 wget -P ./data/pbf https://download.geofabrik.de/europe/andorra-latest.osm.pbf
 # build
