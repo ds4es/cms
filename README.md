@@ -1,4 +1,4 @@
-# Coverage Monitoring Service (Back-End)
+# Service Coverage Monitoring (Back-End)
 
 This project aims to propose a solution to offer a high resolution of the capacity coverage monitoring for critical dispatch services such as an emergency service.   
 
@@ -6,9 +6,9 @@ By **capacity coverage** we mean the information relying on: *How many teams can
 
 Below is an example of how this information could be used in a dispatch application:
 
-![Dispatch application example](https://benjaminberhault.com//images/01-Project-Getting_a_clear_picture_on_the_front_line/option01.jpg)
+![Dispatch application example](https://benjaminberhault.com/images/01-Project-Getting_a_clear_picture_on_the_front_line/option01.jpg)
 
-At some point this project will need one or more machine learning models to estimate accurately the routes. For that purpose a project has been initiated: https://github.com/ds4es/esuro
+At some point this project will need one or more machine learning models to estimate accurately the routes. For that purpose a project has been initiated: https://github.com/ds4es/unit-response-oracle
 
 ## Installation instructions on RHEL 8 / CentOS 8
 
@@ -18,8 +18,8 @@ sudo dnf install wget autoconf automake libtool curl make unzip git gcc-c++ boos
  
 Retrieve this repo
 ```
-git clone https://github.com/ds4es/cms
-cd cms
+git clone https://github.com/ds4es/service-coverage-monitoring
+cd service-coverage-monitoring
 ```
 
 Pull all git submodules
