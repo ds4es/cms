@@ -18,8 +18,8 @@ sudo dnf install wget autoconf automake libtool curl make unzip git gcc-c++ boos
  
 Retrieve this repo
 ```
-git clone https://github.com/ds4es/service-coverage-monitoring
-cd service-coverage-monitoring
+git clone https://github.com/ds4es/service-coverage-monitoring-backend
+cd service-coverage-monitoring-backend
 ```
 
 Pull all git submodules
